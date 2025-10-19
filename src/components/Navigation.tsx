@@ -2,6 +2,7 @@
 
 import { Home, Menu, X } from "lucide-react";
 import { useState } from "react";
+import Image from "next/image";
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,9 +24,12 @@ export default function Navigation() {
             onClick={() => scrollToSection("hero")}
           >
             <Home className="h-8 w-8 text-amber-600" strokeWidth={1.5} />
-            <span className="text-2xl font-light tracking-tight text-gray-900">
-              Pacific <span className="font-semibold">Homes</span>
-            </span>
+            <Image
+                            src = "/windchase.jpg"
+                            alt= "logo"
+                            fill
+                            className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                          />
           </div>
 
           <div className="hidden md:flex items-center space-x-8">
