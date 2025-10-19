@@ -1,3 +1,5 @@
+"use client"
+
 import { Award, Heart, Users } from "lucide-react";
 
 export default function About() {

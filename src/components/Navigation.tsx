@@ -1,6 +1,6 @@
 "use client"
 
-import { Home, Menu, X } from "lucide-react";
+import {  Menu, X } from "lucide-react";
 import { useState } from "react";
 import Image from "next/image";
 
@@ -20,15 +20,16 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           <div
-            className="flex items-center space-x-2 cursor-pointer"
+            className="flex items-center justify-content-center space-x-2 cursor-pointer"
             onClick={() => scrollToSection("hero")}
           >
-            <Home className="h-8 w-8 text-amber-600" strokeWidth={1.5} />
+            {/* <Home className="h-8 w-8 text-amber-600" strokeWidth={1.5} /> */}
             <Image
                             src = "/windchase.jpg"
                             alt= "logo"
-                            fill
-                            className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                            width = {80}
+                            height={90}
+                            // className="absolute inset-0  object-cover group-hover:scale-110 transition-transform duration-700"
                           />
           </div>
 
