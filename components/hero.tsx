@@ -26,8 +26,12 @@ export default function Hero() {
 
       {/* 🔹 Hero Text Content */}
       <div className="relative z-10 flex flex-col justify-center items-start h-full px-6 sm:px-10 md:px-16 lg:px-20 max-w-7xl mx-auto text-left">
-        <h1 className="text-white font-bold mb-4 leading-tight tracking-tight text-3xl sm:text-4xl md:text-5xl lg:text-6xl whitespace-nowrap overflow-hidden text-ellipsis">
-          Affordable Luxury Homes {" "}
+        <h1
+          className="text-white font-bold mb-4 leading-tight tracking-tight
+            text-[1.75rem] sm:text-4xl md:text-5xl lg:text-6xl
+            whitespace-nowrap overflow-hidden text-ellipsis"
+        >
+          Affordable Luxury Homes{" "}
           <span className="block align-baseline">
             with <TypingText />
           </span>
