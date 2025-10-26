@@ -7,7 +7,7 @@ export function TypingText() {
   const [phraseIndex, setPhraseIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
 
-  const phrases = ["Build", "exquisite quality", "great value"];
+  const phrases = ["Building", "exquisite quality", "great value"];
   const currentPhrase = phrases[phraseIndex];
   const typingSpeed = 100;
   const deletingSpeed = 50;

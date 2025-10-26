@@ -24,7 +24,7 @@ const config: Config = {
         },
       },
       animation: {
-        fadeIn: "fadeIn 1s ease-in-out",
+        fadeIn: "fadeIn 5s ease-in-out",
         slideUp: "slideUp 0.8s ease-out",
         bounceIn: "bounceIn 0.7s ease-in-out",
       },

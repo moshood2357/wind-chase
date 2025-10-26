@@ -41,11 +41,11 @@ export default function Services() {
           </p>
         </div>
 
-        <div className="grid grid-cols-3 gap-8 ">
+        <div className="grid grid-cols-3 gap-8">
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md animate-fadeIn transition"
+              className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300"
             >
               <Image
                 src={service.image || "/placeholder.svg"}
