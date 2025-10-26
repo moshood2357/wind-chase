@@ -6,7 +6,7 @@ export default function Hero() {
       <div>
         <video
           id="heroVideo"
-          className="absolute inset-0"
+          className="relative inset-0"
           autoPlay
           muted
           loop
@@ -22,7 +22,7 @@ export default function Hero() {
         </video>
       </div>
 
-      <div className="relative h-full flex flex-col justify-center px-6 max-w-7xl mx-auto">
+      <div className="absolute top-30 h-full flex flex-col justify-center px-6 max-w-7xl mx-auto">
         <h1 className="text-5xl font-bold text-white mb-4 max-w-2xl leading-tight">
           Affordable Luxury homes with <TypingText />
         </h1>
