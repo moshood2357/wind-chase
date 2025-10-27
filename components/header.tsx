@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link"
 import { Menu, X } from "lucide-react"; 
 
 export default function Header() {
@@ -23,36 +24,36 @@ export default function Header() {
 
         {/* 🔹 Desktop Nav */}
         <nav className="hidden md:flex items-center gap-8">
-          <a
-            href="#"
+          <Link
+            href="/"
             className="text-gray-800 hover:text-yellow-600 transition"
           >
             Home
-          </a>
-          <a
-            href="#about"
+          </Link>
+          <Link
+            href="/about-us"
             className="text-gray-800 hover:text-yellow-600 transition"
           >
             About Us
-          </a>
-          <a
+          </Link>
+          <Link
             href="#services"
             className="text-gray-800 hover:text-yellow-600 transition"
           >
             Our Services
-          </a>
-          <a
+          </Link>
+          <Link
             href="#projects"
             className="text-gray-800 hover:text-yellow-600 transition"
           >
             Projects
-          </a>
-          <a
+          </Link>
+          <Link
             href="#contact"
             className="text-gray-800 hover:text-yellow-600 transition"
           >
             Contact Us
-          </a>
+          </Link>
         </nav>
 
         {/* 🔹 Mobile Menu Button */}
