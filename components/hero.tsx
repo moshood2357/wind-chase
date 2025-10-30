@@ -31,9 +31,11 @@ export default function Hero() {
             text-[1.75rem] sm:text-4xl md:text-5xl lg:text-6xl
             whitespace-nowrap overflow-hidden text-ellipsis"
         >
-          Affordable Luxury Homes{" "}
-          <span className="block align-baseline">
-            with <TypingText />
+          Affordable Luxury Homes with{" "}
+          <span className="block align-baseline text-amber-400">
+            <TypingText
+              phrases={["Building", "exquisite quality", "great value"]}
+            />
           </span>
         </h1>
 

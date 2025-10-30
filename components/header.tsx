@@ -37,19 +37,19 @@ export default function Header() {
             About Us
           </Link>
           <Link
-            href="#services"
+            href="/services"
             className="text-gray-800 hover:text-yellow-600 transition"
           >
             Our Services
           </Link>
           <Link
-            href="#projects"
+            href="/projects"
             className="text-gray-800 hover:text-yellow-600 transition"
           >
             Projects
           </Link>
           <Link
-            href="#contact"
+            href="/contact"
             className="text-gray-800 hover:text-yellow-600 transition"
           >
             Contact Us
@@ -70,41 +70,41 @@ export default function Header() {
       {isOpen && (
         <div className="md:hidden bg-white border-t border-gray-200 shadow-lg">
           <nav className="flex flex-col items-start px-6 py-4 space-y-4">
-            <a
-              href="#"
+            <Link
+              href="/"
               className="text-gray-800 hover:text-yellow-600 transition"
               onClick={() => setIsOpen(false)}
             >
               Home
-            </a>
-            <a
-              href="#about"
+            </Link>
+            <Link
+              href="/about-us"
               className="text-gray-800 hover:text-yellow-600 transition"
               onClick={() => setIsOpen(false)}
             >
               About Us
-            </a>
-            <a
-              href="#services"
+            </Link>
+            <Link
+              href="/services"
               className="text-gray-800 hover:text-yellow-600 transition"
               onClick={() => setIsOpen(false)}
             >
               Our Services
-            </a>
-            <a
-              href="#projects"
+            </Link>
+            <Link
+              href="/projects"
               className="text-gray-800 hover:text-yellow-600 transition"
               onClick={() => setIsOpen(false)}
             >
               Projects
-            </a>
-            <a
-              href="#contact"
+            </Link>
+            <Link
+              href="/contact"
               className="text-gray-800 hover:text-yellow-600 transition"
               onClick={() => setIsOpen(false)}
             >
               Contact Us
-            </a>
+            </Link>
           </nav>
         </div>
       )}

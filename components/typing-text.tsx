@@ -2,40 +2,46 @@
 
 import { useState, useEffect } from "react";
 
-export function TypingText() {
+interface TypingTextProps {
+  phrases: string[];
+  heading?: string;
+  typingSpeed?: number;
+  deletingSpeed?: number;
+  pauseTime?: number;
+}
+
+export function TypingText({
+  phrases,
+  // heading = "",
+  typingSpeed = 100,
+  deletingSpeed = 50,
+  pauseTime = 2000,
+}: TypingTextProps) {
   const [displayedText, setDisplayedText] = useState("");
   const [phraseIndex, setPhraseIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
 
-  const phrases = ["Building", "exquisite quality", "great value"];
   const currentPhrase = phrases[phraseIndex];
-  const typingSpeed = 100;
-  const deletingSpeed = 50;
-  const pauseTime = 2000;
 
   useEffect(() => {
     let timeout: NodeJS.Timeout;
 
     if (!isDeleting) {
-      // Typing phase
       if (displayedText.length < currentPhrase.length) {
         timeout = setTimeout(() => {
           setDisplayedText((prev) => currentPhrase.slice(0, prev.length + 1));
         }, typingSpeed);
       } else {
-        // Pause before deleting
         timeout = setTimeout(() => {
           setIsDeleting(true);
         }, pauseTime);
       }
     } else {
-      // Deleting phase
       if (displayedText.length > 0) {
         timeout = setTimeout(() => {
           setDisplayedText((prev) => prev.slice(0, -1));
         }, deletingSpeed);
       } else {
-        // ✅ Fix: use timeout to defer next state change
         timeout = setTimeout(() => {
           setIsDeleting(false);
           setPhraseIndex((prev) => (prev + 1) % phrases.length);
@@ -44,7 +50,15 @@ export function TypingText() {
     }
 
     return () => clearTimeout(timeout);
-  }, [displayedText, isDeleting, currentPhrase, phrases.length]);
+  }, [
+    displayedText,
+    isDeleting,
+    currentPhrase,
+    phrases,
+    typingSpeed,
+    deletingSpeed,
+    pauseTime,
+  ]);
 
   return (
     <span className="inline-block">
