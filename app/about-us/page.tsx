@@ -10,14 +10,14 @@ export default function AboutPage() {
 
       {/* Hero */}
 
-      <section className="relative w-full h-[90vh] sm:h-screen overflow-hidden">
+      <section className="relative w-full h-[60vh] sm:h-screen overflow-hidden">
         {/* overlay */}
         <div className="absolute inset-0 bg-black/10">
           <Image
             src="/lounge.jpeg"
             alt="Pacific Homes"
-            width={300}
-            height={300}
+            width={200}
+            height={200}
             className="h-full w-full object-cover"
           />
         </div>

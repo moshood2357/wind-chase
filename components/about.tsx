@@ -4,7 +4,8 @@ export default function About() {
       className="relative py-20 sm:py-24 bg-cover bg-center bg-fixed"
       style={{
         backgroundImage: "url(/lamp.jpg)",
-      }}
+      }} 
+      
     >
       {/* Dark overlay for contrast */}
       <div className="absolute inset-0 bg-black/60"></div>

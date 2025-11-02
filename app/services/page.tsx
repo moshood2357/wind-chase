@@ -6,7 +6,7 @@ export default function PacificHomesLanding() {
   return (
     <div className="min-h-screen bg-gray-100 text-gray-900 font-sans">
       {/* Header / Nav */}
-      <Header />
+      <Header/>
 
       {/* Hero */}
       <section className="relative">
@@ -158,11 +158,29 @@ export default function PacificHomesLanding() {
               <h3 className="font-semibold">Pacific Home Properties</h3>
               <p className="mt-3 text-sm text-gray-600">
                 We have a selection of exciting schemes in the pipeline across
-                UK in a broad range of locations, each situated in a
-                highly-sought after areas. Our developments appeal to a wide
-                range of the capital&apos;s buyers - whether you are looking for
-                a central base, an investment opportunity, a first time buyer
-                property or a larger family home.
+                uk in a broad range of locations, each situated in a
+                highly-sought after areas. <br /><br />
+                Our developments appeal to a wide
+                range of the capital’s buyers - whether you are looking for a
+                central base, an investment opportunity, a first time buyer
+                property or a larger family home. Pacific&apos;s philosophy of
+                uncompromising quality and design aesthetics ensures that each
+                home created gives enjoyment and lasting memories, to be handed
+                down to future generations. <br /><br />
+                The pacific homes story is not just
+                about building houses. Since its formation the company&apos;s ethos
+                of responsible development has created an enviable award-winning
+                reputation for excellence and innovation. Today pacific homes is
+                widely recognised for being the cutting edge of contemporary
+                design, and particularly for the way it meets the aspirations,
+                personal preferences and changing lifestyles of homebuyers.
+                Whatever the price range or house style, each pacific home is
+                built in a carefully selected location and designed to
+                complement its environment, while meeting the practical
+                requirements of everyday living. Quality and imagination
+                combined with meticulous attention to exterior and internal
+                detail are the key factors that have enabled pacific homes to
+                secure its strong reputation for excellence.
               </p>
               <div className="mt-6">
                 <a

@@ -1,10 +1,12 @@
 import { TypingText } from "./typing-text";
 
+import Link from "next/link";
+
 export default function Hero() {
   return (
     <section className="relative w-full h-[90vh] sm:h-screen overflow-hidden">
       {/* 🔹 Background Video */}
-      <div className="absolute inset-0 w-full h-full">
+      <div className="absolute inset-0 w-full h-full ">
         <video
           id="heroVideo"
           className="w-full h-full object-cover"
@@ -25,7 +27,7 @@ export default function Hero() {
       </div>
 
       {/* 🔹 Hero Text Content */}
-      <div className="relative z-10 flex flex-col justify-center items-start h-full px-6 sm:px-10 md:px-16 lg:px-20 max-w-7xl mx-auto text-left">
+      <div className="py-5 relative z-10 flex flex-col justify-center items-start h-full px-6 sm:px-10 md:px-16 lg:px-20 max-w-7xl mx-auto text-left">
         <h1
           className="text-white font-bold mb-4 leading-tight tracking-tight
             text-[1.75rem] sm:text-4xl md:text-5xl lg:text-6xl
@@ -44,9 +46,12 @@ export default function Hero() {
           Buckinghamshire, Berkshire, Hampshire and Hertfordshire.
         </p>
 
-        <button className="bg-black text-white px-6 py-3 rounded-lg font-semibold text-sm sm:text-base hover:bg-gray-800 transition-all duration-300">
+        <Link
+          href="/services"
+          className="bg-black text-white px-6 py-3 rounded-lg font-semibold text-sm sm:text-base hover:bg-gray-800 transition-all duration-300"
+        >
           GET IN TOUCH →
-        </button>
+        </Link>
       </div>
     </section>
   );

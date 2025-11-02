@@ -237,3 +237,9 @@
     @apply bg-background text-foreground;
   }
 } */
+
+
+
+ .highlight {
+   border-bottom: 4px solid rgb(132, 0, 255)
+ }
