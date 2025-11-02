@@ -21,7 +21,7 @@ export default function Contacts() {
             href="mailto:enquiries@pacifichomesltd.co.uk"
             className="text-amber-600 font-medium"
           >
-            enquiries@pacifichomesltd.co.uk
+            enquiries@windchaseltd.co.uk
           </a>
           <br />
           Tel: +44 (0) 1908 911 945 or the contact form below your idea. We are

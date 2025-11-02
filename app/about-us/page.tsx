@@ -1,6 +1,7 @@
 
 import Image from "next/image";
 import Header from "@/components/header";
+import Footer from "@/components/footer";
 
 export default function AboutPage() {
   return (
@@ -12,9 +13,9 @@ export default function AboutPage() {
 
       <section className="relative w-full h-[60vh] sm:h-screen overflow-hidden">
         {/* overlay */}
-        <div className="absolute inset-0 bg-black/10">
+        <div className="absolute inset-0">
           <Image
-            src="/lounge.jpeg"
+            src="/lounges.jpg"
             alt="Pacific Homes"
             width={200}
             height={200}
@@ -44,7 +45,7 @@ export default function AboutPage() {
                 Welcome to Pacific Homes
               </div>
               <p className="text-gray-600 leading-relaxed mb-6 text-sm sm:text-base">
-                Pacific homes was created to bridge the gap between the desire
+                Wind Chase was created to bridge the gap between the desire
                 to own affordable and luxury homes with great value and
                 exquisite quality. We pride ourselves in seeking out locations
                 which offer an escape from the hustle and bustle of big cities
@@ -95,7 +96,7 @@ export default function AboutPage() {
             </div>
             <div className="lg:col-span-7 bg-gray-50 p-6 sm:p-8 rounded-md">
               <div className="inline-block bg-amber-100 text-amber-800 uppercase rounded-full px-3 py-1 text-xs font-semibold mb-4">
-                Pacific Home Properties
+                Wind Chase Properties
               </div>
               <h2 className="text-lg sm:text-xl font-semibold mb-3">
                 Exciting schemes across the UK
@@ -127,19 +128,7 @@ export default function AboutPage() {
       </main>
 
       {/* FOOTER */}
-      <footer className="bg-black text-gray-300 mt-10">
-        <div className="max-w-6xl mx-auto px-6 py-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
-          <div className="text-sm">
-            © 2020 Pacific Homes Limited. All Rights Reserved.
-          </div>
-          <ul className="flex flex-wrap justify-center gap-5 text-sm">
-            <li className="hover:text-white cursor-pointer">About us</li>
-            <li className="hover:text-white cursor-pointer">Projects</li>
-            <li className="hover:text-white cursor-pointer">Services</li>
-            <li className="hover:text-white cursor-pointer">Contact</li>
-          </ul>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }

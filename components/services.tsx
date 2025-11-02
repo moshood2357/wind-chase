@@ -9,7 +9,7 @@ export default function Services() {
       image: "/demolition.jpeg",
     },
     {
-      title: "Pacific Home Properties",
+      title: "Wind Chase Properties",
       description:
         "Luxury family homes and apartments in prime locations throughout Greater London and the Home Counties. Built with superior craftsmanship and high-end finishes.",
       image: "/house.jpg",
@@ -34,7 +34,7 @@ export default function Services() {
             The Best Service You Can Buy
           </h2>
           <p className="text-gray-600 max-w-3xl mx-auto leading-relaxed text-base sm:text-lg">
-            Pacific Homes is a developer of luxury new homes throughout Greater
+            Wind Chase is a developer of luxury new homes throughout Greater
             London, Buckinghamshire, and the Home Counties. Combining
             aspirational design with architectural excellence, we create
             prestigious homes in premier UK locations.

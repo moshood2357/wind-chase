@@ -1,6 +1,7 @@
 "use client";
 
 import Header from "@/components/header";
+import Footer from "@/components/footer";
 import { TypingText } from "@/components/typing-text";
 import Image from "next/image";
 import Link from "next/link";
@@ -63,7 +64,7 @@ export default function ContactPage() {
                 href="mailto:enquiries@pacifichomesltd.co.uk"
                 className="text-amber-600 font-medium"
               >
-                enquiries@pacifichomesltd.co.uk
+                enquiries@windchaseltd.co.uk
               </a>
               <br />
               Tel: +44 (0) 1908 911 945 or the contact form below your idea. We
@@ -123,25 +124,7 @@ export default function ContactPage() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-gray-900 text-gray-200 py-8">
-        <div className="max-w-6xl mx-auto px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-4 text-sm">
-          <div>© 2025 Pacific Homes Limited. All Rights Reserved.</div>
-          <div className="flex items-center gap-6">
-            <a href="#" className="hover:underline">
-              About us
-            </a>
-            <a href="#" className="hover:underline">
-              Projects
-            </a>
-            <a href="#" className="hover:underline">
-              Services
-            </a>
-            <a href="#" className="hover:underline">
-              Contact
-            </a>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }

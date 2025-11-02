@@ -13,18 +13,18 @@ export default function About() {
       {/* Content */}
       <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-8 drop-shadow-lg">
-          Pacific Homes
+          Wind Chase
         </h2>
 
         <div className="space-y-6 text-white text-base sm:text-lg md:text-xl leading-relaxed font-light">
           <p>
-            The Pacific Homes story is not just about building houses. Since its
+            The Wind Chase story is not just about building houses. Since its
             formation, our ethos of responsible development has built an
             award-winning reputation for excellence and innovation.
           </p>
 
           <p>
-            Today, Pacific Homes is recognized for being at the cutting edge of
+            Today, Wind Chase is recognized for being at the cutting edge of
             contemporary design — meeting the aspirations, preferences, and
             evolving lifestyles of modern home buyers.
           </p>

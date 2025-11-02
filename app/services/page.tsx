@@ -1,3 +1,4 @@
+import Footer from "@/components/footer";
 import Header from "@/components/header";
 import { TypingText } from "@/components/typing-text";
 import Image from "next/image";
@@ -155,7 +156,7 @@ export default function PacificHomesLanding() {
               className="w-full h-96 object-cover transition-transform duration-500 hover:scale-105"
             />
             <div className="p-6">
-              <h3 className="font-semibold">Pacific Home Properties</h3>
+              <h3 className="font-semibold">Wind Chase Properties</h3>
               <p className="mt-3 text-sm text-gray-600">
                 We have a selection of exciting schemes in the pipeline across
                 uk in a broad range of locations, each situated in a
@@ -167,7 +168,7 @@ export default function PacificHomesLanding() {
                 uncompromising quality and design aesthetics ensures that each
                 home created gives enjoyment and lasting memories, to be handed
                 down to future generations. <br /><br />
-                The pacific homes story is not just
+                The Wind Chase story is not just
                 about building houses. Since its formation the company&apos;s ethos
                 of responsible development has created an enviable award-winning
                 reputation for excellence and innovation. Today pacific homes is
@@ -205,53 +206,7 @@ export default function PacificHomesLanding() {
         </div>
       </section>
 
-      {/* Subscribe / Footer CTA */}
-      <footer className="bg-gray-900 text-gray-100 mt-12">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8 py-12">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
-            <div className="md:col-span-2">
-              <h4 className="text-lg font-bold">
-                Subscribe to our mailing list for latest updates with flat{" "}
-                <span className="font-extrabold">10% discount</span> promo code.
-              </h4>
-              <p className="mt-2 text-gray-300 text-sm">
-                We’ll send you occasional updates, news and promotions.
-                Unsubscribe anytime.
-              </p>
-            </div>
-
-            <div className="flex items-center gap-3">
-              <input
-                aria-label="Your email"
-                type="email"
-                placeholder="Your email"
-                className="w-full md:w-auto flex-1 px-4 py-3 rounded border border-gray-700 bg-gray-800 text-gray-100 placeholder-gray-400 focus:ring-2 focus:ring-amber-500"
-              />
-              <button className="px-4 py-3 bg-amber-600 hover:bg-amber-500 rounded text-white font-semibold transition">
-                SUBSCRIBE
-              </button>
-            </div>
-          </div>
-
-          <div className="mt-10 border-t border-gray-800 pt-6 text-sm text-gray-400 flex flex-col md:flex-row items-center justify-between">
-            <div>© 2025 Pacific Homes Limited. All Rights Reserved.</div>
-            <div className="flex items-center gap-6 mt-3 md:mt-0">
-              <a href="#" className="hover:underline">
-                About us
-              </a>
-              <a href="#" className="hover:underline">
-                Projects
-              </a>
-              <a href="#" className="hover:underline">
-                Services
-              </a>
-              <a href="#contact" className="hover:underline">
-                Contact
-              </a>
-            </div>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }
