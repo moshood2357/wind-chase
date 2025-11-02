@@ -1,56 +1,59 @@
+"use client";
 
-import Image from "next/image";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function AboutPage() {
   return (
-    <div className="min-h-screen font-sans text-gray-800 bg-white">
-      {/* Header*/}
+    <div className="min-h-screen bg-white text-gray-900 font-sans">
+      {/* Navbar */}
       <Header />
 
-      {/* Hero */}
-
-      <section className="relative w-full h-[60vh] sm:h-screen overflow-hidden">
-        {/* overlay */}
-        <div className="absolute inset-0">
+      {/* Hero Section */}
+      <section className="relative">
+        <div className="h-[350px] md:h-[480px] lg:h-[520px] relative w-full overflow-hidden">
           <Image
             src="/lounges.jpg"
-            alt="Pacific Homes"
-            width={200}
-            height={200}
-            className="h-full w-full object-cover"
+            alt="About hero"
+            width={1920}
+            height={1080}
+            className="absolute inset-0 w-full h-full object-cover brightness-[0.6]"
           />
-        </div>
-
-        {/* 🔹 Hero Text Content */}
-        <div className="absolute top-30 left-40 z-10 flex flex-col justify-center items-start h-full px-6 sm:px-10 md:px-16 lg:px-20 max-w-7xl mx-auto text-left">
-          <h1
-            className="text-white font-bold mb-4
-            text-[1.75rem] sm:text-4xl md:text-5xl lg:text-6xl
-            whitespace-nowrap overflow-hidden "
-          >
-            About Us
-          </h1>
+          <div className="absolute inset-0 flex items-center">
+            <div className="max-w-6xl mx-auto px-6 lg:px-8">
+              <h1 className="text-white font-bold mb-3 leading-tight text-3xl md:text-5xl">
+                About Us
+              </h1>
+              <div className="mt-3 flex items-center gap-3 text-sm text-gray-200">
+                <Link href="/" className="hover:underline">
+                  Homepage
+                </Link>
+                <span className="text-white/50">/</span>
+                <span>About</span>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
-      {/* MAIN CONTENT */}
-      <main className="max-w-6xl mx-auto px-4 sm:px-8 lg:px-0 mt-24">
-        {/* Section 1 */}
-        <section className="bg-white py-10 sm:py-16">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-start">
+      {/* Main Content */}
+      <main className="py-16 bg-white">
+        <div className="max-w-6xl mx-auto px-6 lg:px-8 space-y-20">
+          {/* Section 1 */}
+          <section className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-start">
             <div className="lg:col-span-7">
               <div className="inline-block bg-amber-100 text-amber-800 uppercase rounded-full px-3 sm:px-4 py-1 text-xs font-semibold mb-4">
-                Welcome to Pacific Homes
+                Welcome to Wind Chase
               </div>
               <p className="text-gray-600 leading-relaxed mb-6 text-sm sm:text-base">
-                Wind Chase was created to bridge the gap between the desire
-                to own affordable and luxury homes with great value and
-                exquisite quality. We pride ourselves in seeking out locations
-                which offer an escape from the hustle and bustle of big cities
-                and large towns whilst still offering great access to good
-                transport links.
+                Wind Chase was created to bridge the gap between the desire to
+                own affordable and luxury homes with great value and exquisite
+                quality. We pride ourselves in seeking out locations which offer
+                an escape from the hustle and bustle of big cities and large
+                towns whilst still offering great access to good transport
+                links.
               </p>
 
               <p className="text-gray-600 leading-relaxed mb-6 text-sm sm:text-base">
@@ -73,18 +76,16 @@ export default function AboutPage() {
             <div className="lg:col-span-5">
               <Image
                 src="/interior.jpg"
-                alt="kitchen"
+                alt="interior design"
                 width={600}
                 height={900}
                 className="w-full h-full object-cover rounded-md shadow-lg"
               />
             </div>
-          </div>
-        </section>
+          </section>
 
-        {/* Section 2 */}
-        <section className="py-10 sm:py-16">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+          {/* Section 2 */}
+          <section className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
             <div className="lg:col-span-5">
               <Image
                 src="/interior.jpg"
@@ -111,23 +112,23 @@ export default function AboutPage() {
               </p>
 
               <p className="text-gray-600 leading-relaxed text-sm sm:text-base mb-3">
-                Pacific’s philosophy of uncompromising quality and design
+                Wind Chase’s philosophy of uncompromising quality and design
                 aesthetics ensures that each home created gives enjoyment and
                 lasting memories, to be handed down to future generations.
               </p>
 
               <p className="text-gray-600 text-sm sm:text-base">
-                Whatever the price range or house style, each Pacific Home is
+                Whatever the price range or house style, each home at Wind Chase is
                 built in a carefully selected location and designed to
                 complement its environment, while meeting the practical
                 requirements of everyday living.
               </p>
             </div>
-          </div>
-        </section>
+          </section>
+        </div>
       </main>
 
-      {/* FOOTER */}
+      {/* Footer */}
       <Footer />
     </div>
   );

@@ -31,7 +31,21 @@ export default function Footer() {
         </div>
 
         <div className="mt-10 border-t border-gray-800 pt-6 text-sm text-gray-400 flex flex-col md:flex-row items-center justify-between">
-          <div>© 2025 Wind Chase Limited. All Rights Reserved.</div>
+          <div className="">
+               <div>© 2025 Wind Chase Limited. All Rights Reserved.</div>
+                <span>
+              Developed by{" "}
+              <a
+                rel="noopener noreferrer"
+                className="underline text-blue-500"
+                href="https://r2systemsolution.co.uk"
+                target="_blank"
+              >
+                R2 system solution Ltd.
+              </a>
+            </span>
+          </div>
+         
           <div className="flex items-center gap-6 mt-3 md:mt-0">
             <Link href="#" className="hover:underline">
               About us
@@ -46,6 +60,7 @@ export default function Footer() {
               Contact
             </Link>
           </div>
+          
         </div>
       </div>
     </footer>
