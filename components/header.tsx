@@ -63,7 +63,7 @@ export default function Header() {
             { href: "/", name: "Home", id: "home" },
             { href: "/services", name: "Our Services", id: "services" },
             { href: "/about-us", name: "About Us", id: "about" },
-            // { href: "/projects", name: "Projects", id: "projects" },
+            { href: "/projects", name: "Projects", id: "projects" },
             { href: "/contact-us", name: "Contact Us", id: "contact" },
           ].map((link) => {
             const isActive =
@@ -109,7 +109,7 @@ export default function Header() {
               { href: "/", name: "Home" },
               { href: "/services", name: "Our Services" },
               { href: "/about-us", name: "About Us" },
-              // { href: "/projects", name: "Projects" },
+              { href: "/projects", name: "Projects" },
               { href: "/contact-us", name: "Contact Us" },
             ].map((link) => (
               <Link
